@@ -1,0 +1,31 @@
+<form class="example-container" [formGroup]="registerForm" (ngSubmit)="submit()" >
+    <mat-form-field>
+    <label>Project Name:</label>
+    <input matInput type="text" formControlName="projectName">
+    </mat-form-field>
+    <mat-form-field>
+    <label>Project Intro</label>
+    <input matInput type="text" formControlName="projectIntro">
+    </mat-form-field>
+  <mat-form-field>
+  <label>Resource</label>
+    <input matInput type="text" formControlName="resourceList">
+  </mat-form-field>
+  <mat-form-field>
+  <label>Tech Selection</label>
+    <input matInput type="text" formControlName="techSelection">
+  </mat-form-field>
+  <!--<mat-form-field>-->
+    <!--&lt;!&ndash;<mat-list formControlName="workflow">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;</mat-list>&ndash;&gt;-->
+  <!--</mat-form-field>-->
+  <button mat-button type="submit">Submit</button>
+</form>
+
+<div style="height: auto">
+  <mat-label>Project Name List</mat-label>
+  <mat-list>
+    <mat-list-item *ngFor="let project of projectList"> {{project.projectName}} </mat-list-item>
+  </mat-list>
+</div>

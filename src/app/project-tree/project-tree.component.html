@@ -1,0 +1,8 @@
+<div class="example-container">
+  <mat-form-field>
+    <input matInput placeholder="Search" type="text" [(ngModel)]="searchKey">
+  </mat-form-field>
+<button mat-button (click)="showVis(searchKey)">Show Vis</button>
+</div>
+
+<div id="visContainer"></div>
