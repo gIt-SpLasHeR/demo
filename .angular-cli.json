@@ -20,10 +20,10 @@
       "prefix": "app",
       "styles": [
         "styles.scss",
-        "./node_modules/vis/dist/vis.css"
+        "../node_modules/vis/dist/vis.css"
       ],
       "scripts": [
-        "./node_modules/vis/dist/vis.js"
+        "../node_modules/vis/dist/vis.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
